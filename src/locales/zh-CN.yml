@@ -5,6 +5,7 @@ commands:
       该指令接受一张图片。你可以在指令后附上图，也可以分成两条消息发送。
       可选方向：left / right / up / down / both
       示例：symmetry -d up
+      别名：对称
     messages:
       pleaseSendImage: 请发送图片。
       jobCanceled: 您未发送图片，操作已取消。

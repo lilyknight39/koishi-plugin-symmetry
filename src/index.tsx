@@ -402,7 +402,7 @@ export function apply(ctx: Context) {
   const logger = ctx.logger("symmetry");
 
   // Register the command
-  ctx
+  const command = ctx
     .command("symmetry [image:text]")
     .option("direction", "-d <direction:string>")
     .action(async ({ session, options }, image) => {
@@ -426,4 +426,6 @@ export function apply(ctx: Context) {
         return renderNotice(session, ".processFailed");
       }
     });
+
+  command.alias("对称");
 }
