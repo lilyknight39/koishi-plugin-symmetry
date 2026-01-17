@@ -17,6 +17,9 @@
     "dist"
   ],
   "license": "MIT",
+  "scripts": {
+    "build": "tsc -p tsconfig.json && cp -R src/locales lib/locales"
+  },
   "keywords": [
     "chatbot",
     "koishi",
