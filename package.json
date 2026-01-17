@@ -22,8 +22,15 @@
     "koishi",
     "plugin"
   ],
+  "dependencies": {
+    "gif-encoder-2": "^1.0.5",
+    "gifuct-js": "^2.1.2",
+    "sharp": "^0.33.4"
+  },
   "devDependencies": {
-    "koishi-plugin-canvas": "^0.2.2"
+    "koishi-plugin-canvas": "^0.2.2",
+    "typescript": "^5.5.4",
+    "yml-register": "^1.2.5"
   },
   "peerDependencies": {
     "koishi": "^4.17.5"

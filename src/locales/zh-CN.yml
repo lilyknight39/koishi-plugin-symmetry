@@ -1,8 +1,12 @@
 commands:
   symmetry:
-    description: 生成给定图片的对称图。
+    description: 生成给定图片的对称图，支持 GIF 动图与更多格式。
     usage: |-
       该指令接受一张图片。你可以在指令后附上图，也可以分成两条消息发送。
+      可选方向：left / right / up / down / both
+      示例：symmetry -d up
     messages:
       pleaseSendImage: 请发送图片。
       jobCanceled: 您未发送图片，操作已取消。
+      invalidDirection: 方向无效，可选：left / right / up / down / both。
+      processFailed: 图片处理失败，请确认格式或稍后重试。
